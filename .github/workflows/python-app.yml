@@ -40,4 +40,4 @@ jobs:
             echo "Conectando no EC2"
             echo "${{secrets.MURILEX_CHAVE}}" > private_key && chmod 600 private_key
             ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-54-80-241-87.compute-1.amazonaws.com "
-                   cd murilex/;git pull;./executar.sh"
+                   cd murilexx/;git pull;./executar.sh"
